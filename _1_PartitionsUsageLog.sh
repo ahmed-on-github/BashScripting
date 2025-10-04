@@ -53,8 +53,8 @@ do
 		PARTMOUNT=$( tail -$[ NUMPARTS - I + 1 ] ./parts_mount | head -1 ) 
 		PARTFS=''
 		
-		# Ignore attached iso image file as it's full by default ( partition name contains "sr" in it)
-		IS_SRx=$( echo ${PARTNAME} | grep -i sr | wc -c )
+		# Ignore attached iso image file as it's full by default ( partition name starts with "sr")
+		IS_SRx=$( echo ${PARTNAME} | grep -i ^sr | wc -c )
 		
 		#echo "is iso disk = ${IS_SRx}"
 		
