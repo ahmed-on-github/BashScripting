@@ -19,7 +19,6 @@
 
 ## run make copy to copy file under /etc/cron.daily/
 
-
 # 2- ---------- Copy the script under /etc/cron.daily/ -----------
 sudo make copy
 
@@ -37,8 +36,6 @@ sudo make copy
 sudo systemctl reload crond.service
 
 # 5- ----------------  At 10 AM, see the log message ------------------
-# use sudo journalctl -p notice | tail -100 | grep Number
-
  sudo journalctl -p notice | tail -100 | grep Number
 # where 'notice' is the default log priority
 
