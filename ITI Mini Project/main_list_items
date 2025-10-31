@@ -1,0 +1,21 @@
+#!/bin/bash
+#source ./main_list_items
+
+
+
+#_0="<-- Back"
+_0="Add User" 
+_1="Modify User" 
+_2="List Users"
+_3="Disable User"
+_4="Enable User"
+_5="Change Passwd"
+
+_6="Add Group" 
+_7="Modify Group"
+_8="Delete Group"
+_9="List Groups" 
+
+_about="About"
+
+
